@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+ header{
+     width: 100%;
+     height: 100vh;
+     background-image: linear-gradient( to left, #fff 81%, orange 20%);
+ }
+ .navsection{
+     width: 100%;
+     height: 20vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-image: linear-gradient( to top, #fff 80%, orange 20%);
+
+ }
+ .logo{
+     width: 40%;
+     color:white;
+     background-image: linear-gradient(grey 40%,black 60%);
+     padding-left: 100px;
+     box-sizing: border-box;
+ }
+ .logo{
+     text-transform: uppercase;
+     font-size: 12px;
+     animation: LRrotate 2s linear infinite;
+     animation-direction: alternate;
+ }
+ @keyframes LRrotate{
+     from{ padding-left: 20px;}
+     to{ padding-right: 100px;}
+ }
+ nav{
+     width: 60%;
+     display: flex;
+     justify-content:space-around ;
+ }
+ nav a{
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #000;
+     font-weight: 900;
+     font-size: 17px;
+     position: relative;
+ }
+ nav a:first-child{
+     color:rgb(100, 65, 228);
+ }
+ nav a::before{
+     content:"" ;
+     position: absolute;
+     top: 110%;
+     left: 0;
+     width: 0%;
+     height: 2px;
+     border-bottom: 2px solid orange;
+    transition: all 0.4s linear ;
+
+ }
+ nav a:hover::before{
+     width: 100%;
+ }
+ main{
+     height: 80vh;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .rightside img{
+     max-width: 400px;
+     height: 300px;
+
+ }
+ .rightside{
+    border-radius: 86% 14% 84% 16% / 43% 56% 44% 57% ;
+    background-color: rosybrown;
+ }
+ .leftside{
+     color: #000;
+     text-transform: uppercase;
+ }
+ .leftside h3{
+     font-size: 40px;
+     margin-bottom: 20px;
+     position: relative;
+ }
+ .leftside h3:after{
+     content: " ";
+     width: 450px;
+     height: 3px;
+     position: absolute;
+     top: 73%;
+     left: 24%;
+     background:#000;
+ }
+ .leftside h1{
+     margin-top: 20px;
+     font-size: 70px;
+     margin-bottom: 25px;
+ }
+ .leftside h2{
+     margin-bottom: 35px;
+     font-weight: 500;
+     word-spacing: 4px;
+ }
+ .leftside .btn1,.btn2{
+     text-decoration: none;
+     font-weight: 900;
+     text-align: center;
+     padding: 12px 25px;
+     cursor: pointer;
+     text-transform: uppercase;
+     border-radius: 20px;
+     color: #222;
+     display: inline-block;
+     background-image: linear-gradient(to right,grey,white);
+     border: 2px solid grey;
+     background-color: rgb(37, 35, 35);
+     box-shadow: none;
+ }
+ .leftside .btn1:hover ,.btn2:hover{
+    color: white;
+    background-image: none;
+ }
+ .leftside .btn2{
+     left: 5%;
+     position: relative;
+ }
